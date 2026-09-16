@@ -8,11 +8,11 @@ The assessment guides users through 12 nuanced hypothetical dilemmas to determin
 
 ## Live Deployment (GitHub Pages)
 
-- **Production URL**: [https://hmnconsulting.github.io/falseidols/](https://hmnconsulting.github.io/falseidols/)
-- **GitHub Repository**: [https://github.com/HMNConsulting/falseidols](https://github.com/HMNConsulting/falseidols)
+- **Production URL**: [https://jakejasko.github.io/falseidols/](https://jakejasko.github.io/falseidols/)
+- **GitHub Repository**: [https://github.com/JakeJasko/falseidols](https://github.com/JakeJasko/falseidols)
 
 > **Note on Enabling GitHub Pages**:
-> 1. Go to repository **Settings** &rarr; **Pages** (`https://github.com/HMNConsulting/falseidols/settings/pages`).
+> 1. Go to repository **Settings** &rarr; **Pages** (`https://github.com/JakeJasko/falseidols/settings/pages`).
 > 2. Under **Build and deployment** &rarr; **Source**, select **GitHub Actions**.
 > 3. The included workflow [`.github/workflows/deploy.yml`](.github/workflows/deploy.yml) will automatically build and publish the site to GitHub Pages on every push to `main`.
 
