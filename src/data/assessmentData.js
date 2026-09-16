@@ -1,4 +1,4 @@
-// The Four False Idols Diagnostic Framework
+// The Four False Idols Diagnostic Framework (Tailored for 30-Something Tech Workers with Young Kids)
 // Based on Arthur Brooks' synthesis of St. Thomas Aquinas (Summa Theologiae)
 
 export const IDOLS = {
@@ -6,8 +6,8 @@ export const IDOLS = {
     id: 'money',
     name: 'Money',
     latinName: 'Divitiae',
-    subtitle: 'The Idol of Insulation & Resource Accumulation',
-    archetype: 'The Sovereign Accumulator',
+    subtitle: 'The Idol of Runway, Liquid Insulation & Net Worth',
+    archetype: 'The Runway Maximizer',
     accentColor: '#2D6A4F', // Deep spruce / forest green
     accentBg: '#EAF3EC',
     darkAccentColor: '#52B788',
@@ -15,19 +15,19 @@ export const IDOLS = {
     symbol: '⚖️',
     quote: '"Wealth is like sea-water; the more we drink, the thirstier we become."',
     quoteAuthor: 'Arthur C. Brooks (quoting Schopenhauer)',
-    aquinasTeaching: 'Thomas Aquinas observed that wealth is merely an instrumental good—it exists solely to be traded for other things. When pursued as an ultimate end, it generates endless vigilance and zero intrinsic peace.',
-    corePromise: 'Absolute autonomy and complete insulation from life’s contingencies.',
-    underlyingFear: 'Scarcity, vulnerability, and being forced to accept terms dictated by others.',
-    theTrap: 'The "Satisfaction Treadmill": Every increment of net worth shifts the threshold of what feels safe. Joy is rapidly replaced by the dread of market drawdowns or erosion.',
-    blindSpot: 'You frequently evaluate relationships, career moves, and time expenditure strictly through cost-benefit ratios and financial return, starving your life of spontaneous, non-monetizable joy.',
+    aquinasTeaching: 'Thomas Aquinas observed that wealth is merely an instrumental good—it exists solely to be traded for other things. When pursued as an ultimate end, it produces endless vigilance and zero intrinsic peace.',
+    corePromise: 'Total financial insulation: an emergency runway and investment portfolio so vast that no tech layoff, daycare hike, or economic shock can threaten your family.',
+    underlyingFear: 'Financial helplessness: waking up with drained reserves, being trapped in a toxic job because of a mortgage, or failing to provide for your children’s future.',
+    theTrap: 'The "Moving Goalpost": Every salary bump, RSU vest, or brokerage milestone instantly shifts your definition of "safe." You tell yourself you’ll relax once you hit the next number, but the finish line never arrives.',
+    blindSpot: 'You evaluate evening family time, health, and career choices through the lens of burn rate and financial upside, remaining mentally trapped in spreadsheets while your kids grow up in front of you.',
     brooksPrescription: {
-      virtue: 'Radical Generosity & Deliberate Detachment',
+      virtue: 'Radical Generosity & Defining "Enough"',
       actionableHabits: [
-        'Set an explicit "Enough" ceiling for your capital reserves; commit any surplus beyond it to direct giving or community investment.',
-        'Practice giving anonymously: experience the clean joy of relinquishing resources without acquiring reputational dividends.',
-        'Regularly spend money on shared experiences with family and friends rather than accumulating balance-sheet insulation.'
+        'Establish an explicit, written "Enough" runway figure with your partner; celebrate hitting it rather than automatically raising the target.',
+        'Intentionally budget for non-monetizable family experiences (trips, memories, leisure) without calculating the opportunity cost in lost market compounding.',
+        'Practice giving away a meaningful sum annually to community causes or friends in need without tracking the financial tax deduction.'
       ],
-      pillarAlignment: 'Invest heavily in Friendship & Family: true security is found in people who love you regardless of your ledger.'
+      pillarAlignment: 'Shift drive toward Family & Friendship: your children remember your unhurried presence on the rug, not the balance in your 529 portfolio.'
     }
   },
 
@@ -35,8 +35,8 @@ export const IDOLS = {
     id: 'power',
     name: 'Power',
     latinName: 'Potestas',
-    subtitle: 'The Idol of Control & Architectural Agency',
-    archetype: 'The Unilateral Sovereign',
+    subtitle: 'The Idol of Architectural Agency & Calendar Sovereignty',
+    archetype: 'The Sovereign Architect',
     accentColor: '#364F6B', // Imperial slate / deep navy
     accentBg: '#EBF1F7',
     darkAccentColor: '#7E9CC7',
@@ -44,19 +44,19 @@ export const IDOLS = {
     symbol: '🏛️',
     quote: '"The appetite for control expands exponentially with every decision you monopolize."',
     quoteAuthor: 'Arthur C. Brooks',
-    aquinasTeaching: 'Aquinas noted that power is simply the capacity to produce an effect. It is morally neutral and entirely contingent on the end toward which it is directed. When power is sought for itself, it breeds paranoia and tyranny.',
-    corePromise: 'Agency over reality: ensuring no one can overrule your vision or subject you to incompetence.',
-    underlyingFear: 'Helplessness, being at the mercy of arbitrary authorities, and losing the reins of your destiny.',
-    theTrap: 'The "Fortress of Distrust": As your control grows, so does your conviction that no one else can execute with your standards. Delegating feels like dereliction, turning authority into a solitary prison.',
-    blindSpot: 'You may mistake submission or obedience from colleagues and loved ones for genuine loyalty and respect. You struggle with being truly vulnerable.',
+    aquinasTeaching: 'Aquinas noted that power is simply the capacity to produce an effect. It is morally neutral and entirely contingent on the end toward which it is directed. When power is sought for itself, it breeds paranoia and loneliness.',
+    corePromise: 'Absolute autonomy: sovereignty over your technical roadmap, work calendar, and home schedule, ensuring no micromanaging executive or chaotic circumstance overrules you.',
+    underlyingFear: 'Disenfranchisement: being forced to execute flawed engineering decisions, having your schedule hijacked by senseless meetings, and losing agency over your time.',
+    theTrap: 'The "Control Fortress": Because you believe no one else will execute with your rigor, you struggle to delegate at work and obsess over rigid household routines at home, turning daily life into an exhausting battle of wills.',
+    blindSpot: 'You interpret your partner’s or team’s pushback as insubordination rather than collaboration, mistaking quiet compliance for genuine trust and connection.',
     brooksPrescription: {
-      virtue: 'Subsidiarity & Servant Leadership',
+      virtue: 'Subsidiarity & Surrendering the Need to Control',
       actionableHabits: [
-        'Practice deliberate yielding: deliberately let others make final calls on decisions where you possess strong opinions.',
-        'Shift your primary metric of success from "How many outcomes did I dictate?" to "How many autonomous leaders did I empower?"',
-        'Confess a real weakness or uncertainty in your next high-stakes briefing to shatter the armor of infallibility.'
+        'Practice deliberate calendar yielding: leave at least 5 hours per week unbooked and allow spontaneous family chaos to unfold without intervention.',
+        'Delegate an important architectural or household decision to someone else and commit to supporting their choice even if it differs from your blueprint.',
+        'When your toddler has a meltdown or plans fall apart, reframe it not as a breakdown of your control, but as an invitation to practice patience and presence.'
       ],
-      pillarAlignment: 'Shift drive toward Service: direct your formidable executive horsepower toward advancing others who can offer you zero leverage in return.'
+      pillarAlignment: 'Shift drive toward Service: redirect your formidable organizational drive toward empowering your teammates and serving your household selflessly.'
     }
   },
 
@@ -64,28 +64,28 @@ export const IDOLS = {
     id: 'pleasure',
     name: 'Pleasure',
     latinName: 'Voluptas',
-    subtitle: 'The Idol of Frictionless Delight & Sensory Comfort',
-    archetype: 'The Refined Epicurean',
+    subtitle: 'The Idol of Sensory Calm, Deep Sleep & Frictionless Comfort',
+    archetype: 'The Sanctuary Seeker',
     accentColor: '#9C3D54', // Vintage wine / terracotta rose
-    accentBg: '#F8ECF0',
+    accentBg: '#F9ECF0',
     darkAccentColor: '#E2738D',
     iconName: 'Sparkles',
     symbol: '🍷',
     quote: '"The pursuit of pure comfort paradoxically narrows the soul and lowers your threshold for joy."',
     quoteAuthor: 'Arthur C. Brooks',
     aquinasTeaching: 'Aquinas explained that pleasure is the natural resting state of having attained some genuine good. Treating sensory pleasure itself as the ultimate destination short-circuits moral growth and leads to numbness.',
-    corePromise: 'A serene existence untroubled by physical distress, emotional confrontation, or grueling toil.',
-    underlyingFear: 'Prolonged suffering, acute physical or mental friction, and relentless sensory deprivation.',
-    theTrap: 'The "Satiety Cliff" (Hedonic Adaptation): The neurochemical receptors of comfort down-regulate rapidly. The luxury resort or vintage wine that dazzled last year becomes the baseline of expectation today.',
-    blindSpot: 'You frequently avoid necessary, productive conflict or strenuous discipline because the immediate unpleasantness feels unbearable, stunting your long-term creative resilience.',
+    corePromise: 'A tranquil sanctuary: unbroken 8-hour sleep, peace, sensory calm, ordering delivery sushi, and complete freedom from screaming toddlers and urgent Slack pings.',
+    underlyingFear: 'Chronic physical depletion: months of sleep deprivation, relentless domestic grime, screaming noise, and having your personal vitality drained dry.',
+    theTrap: 'The "Satiety Cliff": Escaping into late-night revenge bedtime procrastination (doomscrolling, gaming, shows) offers brief dopamine but deepens tomorrow’s exhaustion, making everyday family life feel unbearable.',
+    blindSpot: 'You frequently check out mentally during high-stress parenting moments or avoid difficult, necessary conversations with your partner because you cannot stomach the immediate discomfort.',
     brooksPrescription: {
-      virtue: 'Voluntary Asceticism & Constructive Hardship',
+      virtue: 'Embracing the Chaos & Purposeful Hardship',
       actionableHabits: [
-        'Choose a daily physical discipline (e.g., rigorous cold exposure, endurance exercise, or strict fasting) to expand your distress tolerance.',
-        'Engage directly with the unpleasant conversation or tedious task you have been evading through comfort distractions.',
-        'Dedicate one weekend per month to austere simplicity: no luxury dining, minimal screens, and quiet contemplative reading.'
+        'Replace late-night revenge screen time with an intentional, disciplined 10:00 PM lights-out routine to secure genuine physiological recovery.',
+        'Reframe the noise and friction of young children not as an interruption to your peace, but as the precious, fleeting season where life is actually happening.',
+        'Engage in a deliberate weekly physical workout that pushes your discomfort threshold, expanding your real resilience under domestic stress.'
       ],
-      pillarAlignment: 'Ground yourself in Faith / Philosophy: cultivate a transcendent conviction that real meaning is forged through suffering well, not fleeing discomfort.'
+      pillarAlignment: 'Ground yourself in Faith / Philosophy: true peace is not the absence of screaming toddlers, but the presence of meaning amid the messy reality.'
     }
   },
 
@@ -93,8 +93,8 @@ export const IDOLS = {
     id: 'fame',
     name: 'Fame & Honor',
     latinName: 'Gloria / Honor',
-    subtitle: 'The Idol of Public Validation & Peer Esteem',
-    archetype: 'The Celebrated Virtuoso',
+    subtitle: 'The Idol of Technical Prestige, Peer Esteem & Validation',
+    archetype: 'The Validated Virtuoso',
     accentColor: '#B06818', // Burnished amber / warm ochre
     accentBg: '#F9F2E7',
     darkAccentColor: '#F4B251',
@@ -103,18 +103,18 @@ export const IDOLS = {
     quote: '"Honor exists in the mind of the person giving it, not the person receiving it. To live for applause is to place your soul in a stranger’s hands."',
     quoteAuthor: 'Arthur C. Brooks',
     aquinasTeaching: 'Aquinas warned that honor is merely the outward sign of someone else’s appreciation of your virtue. If you seek honor directly, you become an actor perpetually terrified of the audience walking out.',
-    corePromise: 'Permanent social significance, historical remembrance, and unambiguous validation of your worth.',
-    underlyingFear: 'Obscurity, being considered mediocre or ordinary, and public humiliation.',
-    theTrap: 'The "Audience Captivity": You become incapable of enjoying an accomplishment unless it is observed, validated, or cheered by peers. Your self-worth becomes a volatile commodity traded on other people’s attention.',
-    blindSpot: 'You curate your public persona so meticulously that your closest loved ones rarely encounter the genuine, unvarnished human underneath the pedestal.',
+    corePromise: 'Professional distinction: being recognized across the tech industry as a top-tier operator or 10x engineer, proving that having young kids didn’t diminish your brilliance.',
+    underlyingFear: 'Professional irrelevance: being quietly written off as a distracted, coasting parent who clocks out early while childless peers get all the acclaim and promotions.',
+    theTrap: 'The "Audience Captivity": Checking Slack channels, LinkedIn views, or GitHub stars for validation leaves your self-worth hostage to workplace feedback. You perform for colleagues while your real life happens offstage.',
+    blindSpot: 'You obsess over maintaining an impressive professional image, spending your best intellectual and emotional energy on work while giving your family only the depleted leftovers.',
     brooksPrescription: {
-      virtue: 'The Inner Scorecard & Quiet Love',
+      virtue: 'The Inner Scorecard & Quiet Devotion',
       actionableHabits: [
-        'Perform major acts of excellence or kindness with strict confidentiality: tell no one, post nothing, and let the act remain hidden.',
-        'Schedule a 48-hour total digital blackout each month: disconnect from metrics, likes, citations, and audience feedback.',
-        'Practice praising peers publicly when they succeed in areas where you personally compete or desire recognition.'
+        'Close Slack and work email strictly at the end of the workday; refuse to check mentions or calibrate your self-worth by evening peer activity.',
+        'Take full pride in unseen, uncelebrated acts of service at home: cleaning the kitchen, reading the fifth bedtime story, without needing praise for it.',
+        'Measure your life success by whether the people in your home respect and love you, rather than whether strangers on LinkedIn admire your career trajectory.'
       ],
-      pillarAlignment: 'Anchor in Deep Relationships: nurture a small circle of friends who knew you before your achievements and who love you when you fail.'
+      pillarAlignment: 'Anchor in Deep Family & Relationships: the people who truly love you care nothing about your title, your GitHub stars, or your engineering level.'
     }
   }
 };
@@ -122,22 +122,22 @@ export const IDOLS = {
 export const FOUR_PILLARS = [
   {
     title: 'Faith / Philosophy',
-    description: 'A transcendent framework greater than yourself. Engaging with timeless philosophical wisdom or spiritual discipline to transcend the ego.',
+    description: 'A transcendent framework greater than yourself. Engaging with timeless philosophical wisdom or spiritual discipline to transcend the ego and modern career rat race.',
     icon: 'Compass'
   },
   {
     title: 'Family',
-    description: 'Unconditional love and kinship. People bound by deep commitment where affection is an enduring duty, not an exchange of utility.',
+    description: 'Unconditional love and presence. Being truly there on the living room rug with your children and partner without mental distractions or Slack notifications.',
     icon: 'HeartHandshake'
   },
   {
     title: 'Friendship',
-    description: 'Aristotelian "real friendships"—alliances of virtue where you seek each other’s moral and emotional good, rather than transactional deals.',
+    description: 'Aristotelian "real friendships"—bonds of shared virtue and vulnerability with friends who know the real you, far beyond professional networking.',
     icon: 'Users'
   },
   {
     title: 'Meaningful Work',
-    description: 'Work pursued not for the idols of acclaim or hoard, but for the quiet dignity of creating value and serving others selflessly.',
+    description: 'Work pursued not for the idols of acclaim, status, or hoarding, but for the quiet dignity of creating value and providing honorably for those you love.',
     icon: 'Sparkle'
   }
 ];
@@ -146,355 +146,354 @@ export const SCENARIOS = [
   {
     id: 1,
     chapter: 'I',
-    category: 'Resource Allocation',
-    title: 'The Sudden Windfall',
-    scenario: 'You unexpectedly inherit an eight-figure sum after taxes. All previous debts and basic family obligations are fully resolved. How do you deploy the bulk of this windfall?',
+    category: 'Career & Autonomy',
+    title: 'The Remote Flexibility Crossroads',
+    scenario: 'Your company announces an ambiguous return-to-office policy requiring two days a week in an office 90 minutes away, right when your family routine finally stabilized. You receive four inbound offers. Which is the most compelling?',
     options: [
       {
+        idol: 'pleasure',
+        title: 'The Low-Friction Sanctuary',
+        description: 'A fully remote European scale-up: 30 hours a week, zero on-call rotations, asynchronous Slack, generous PTO, and an explicit culture of logging off at 4:30 PM.'
+      },
+      {
         idol: 'money',
-        title: 'The Permanent Fortress',
-        description: 'Lock it into an ironclad capital-preservation trust. The compounding yield guarantees you and your descendants are permanently insulated from any conceivable economic catastrophe.'
+        title: 'The Financial Accelerator',
+        description: 'A tier-1 firm offering a 40% salary bump and guaranteed quarterly liquidity, letting you max out the kids’ 529 college plans and pay down the mortgage years early.'
       },
       {
         idol: 'power',
-        title: 'The Strategic Leverage',
-        description: 'Acquire decisive controlling stakes in emerging companies or civic institutions, giving you direct voting power over board appointments and long-term organizational strategy.'
-      },
-      {
-        idol: 'pleasure',
-        title: 'The Epicurean Sanctuary',
-        description: 'Secure a private, sunlit estate in Kyoto or Provence, equipped with master culinary facilities, spa grounds, and endless unhurried days dedicated to peace and sensory delight.'
+        title: 'The Lead Architect / Founding Post',
+        description: 'Lead technical architect at a well-funded seed startup: total sovereignty over the tech stack, hiring decisions, and your daily calendar, answering to no one but the CEO.'
       },
       {
         idol: 'fame',
-        title: 'The Enduring Monolith',
-        description: 'Endow a flagship research center or prestigious national prize bearing your family name, ensuring lasting public distinction and universal admiration across future generations.'
+        title: 'The High-Visibility Evangelist',
+        description: 'A staff-level developer advocate role at a marquee tech unicorn: writing high-visibility open source, hosting key technical podcasts, and building an enviable personal brand.'
       }
     ]
   },
   {
     id: 2,
     chapter: 'II',
-    category: 'Career & Ambition',
-    title: 'The Four Paths',
-    scenario: 'At the zenith of your creative energy, four distinct leadership opportunities present themselves. All carry respectable status, but each emphasizes a different horizon. Which do you choose?',
+    category: 'Boundaries & Presence',
+    title: 'The 8:30 PM Bedtime Meltdown',
+    scenario: 'Your toddler is in the middle of a screaming, teeth-brushing standoff while your partner is managing the baby. Suddenly, your phone buzzes on the nightstand: a critical production outage just triggered. What is your immediate visceral reaction?',
     options: [
       {
-        idol: 'fame',
-        title: 'The Public Luminary',
-        description: 'A marquee speaking residency and high-visibility media platform where your books and keynotes are broadcast to an audience of millions worldwide.'
-      },
-      {
-        idol: 'power',
-        title: 'The Turnaround Commander',
-        description: 'Chief executive officer of a distressed 5,000-person institution with sweeping unilateral authority to reshape operations, hire, fire, and enact your singular vision.'
+        idol: 'pleasure',
+        title: 'Sensory Overload & Craving Silence',
+        description: 'Overwhelming sensory exhaustion: you want to close your eyes, shut out the screaming, and escape into 48 hours of quiet, dark, uninterrupted peace.'
       },
       {
         idol: 'money',
-        title: 'The Capital Syndicate',
-        description: 'Senior partner in a discreet private equity syndicate with enormous carried interest, guaranteeing tens of millions in net equity within five years.'
+        title: 'Acute Job Security & Runway Panic',
+        description: 'Spike of financial dread: you worry that missing a high-visibility incident during a season of tech layoffs will jeopardize your job and family runway.'
       },
       {
-        idol: 'pleasure',
-        title: 'The Frictionless Advisory',
-        description: 'A 20-hour-a-week boutique advisory post: first-class global travel, five-star accommodations, zero administrative drudgery, and four months of paid sabbatical.'
+        idol: 'power',
+        title: 'Fury at Lost Control & Shoddy Systems',
+        description: 'Incandescent frustration: you are enraged that junior engineers broke production and that external chaos is hijacking your family evening without your consent.'
+      },
+      {
+        idol: 'fame',
+        title: 'Dread of Being Labeled Incompetent',
+        description: 'Reputational insecurity: you dread your team thinking you’ve become a distracted parent who clocks out and drops the ball when stakes are high.'
       }
     ]
   },
   {
     id: 3,
     chapter: 'III',
-    category: 'Underlying Anxiety',
-    title: 'The 3:00 AM Dread',
-    scenario: 'You wake up in the dead of night startled by an acute, gut-wrenching anxiety. If you listen closely to your deepest vulnerability, what terror is speaking?',
+    category: 'Protected Time',
+    title: 'The Rare Golden Afternoon',
+    scenario: 'A miraculous alignment of stars: daycare is open, your partner took the kids to the grandparents, and you finished your sprint tasks by 1:00 PM on Friday. You have five hours of total solitude in an empty house. How do you instinctively spend it?',
     options: [
       {
-        idol: 'money',
-        title: 'Financial Evaporation',
-        description: 'The specter of an unforeseen macro collapse or catastrophic legal liability liquidating your reserves, leaving you financially stranded.'
+        idol: 'pleasure',
+        title: 'The Sensory Indulgence & Deep Sleep',
+        description: 'Pull the blackout shades, order high-end delivery takeout you don’t have to share, and take an unbroken 3-hour afternoon nap followed by guilt-free streaming.'
       },
       {
-        idol: 'fame',
-        title: 'Public Disgrace',
-        description: 'The horror of a humiliating blunder or exposure, watching peers dismiss you as an overrated fraud or gossiping behind your back.'
+        idol: 'money',
+        title: 'The Financial Runway Audit',
+        description: 'Open your spreadsheets: model out your liquid runway, rebalance your portfolio, analyze tax-advantaged accounts, and calculate your exact FI/RE date.'
       },
       {
         idol: 'power',
-        title: 'Subjugation & Impotence',
-        description: 'The claustrophobia of finding yourself trapped under an arbitrary superior, forced to carry out irrational decrees with zero say in the outcome.'
+        title: 'The Strategic Architecture Reset',
+        description: 'Clean your workspace, overhaul your project roadmap, and write an authoritative architectural RFC to steer the engineering team’s next quarter on your terms.'
       },
       {
-        idol: 'pleasure',
-        title: 'Unrelenting Grinding Agony',
-        description: 'The prospect of entering months of acute chronic pain, sleep deprivation, physical deterioration, and inescapable daily distress.'
+        idol: 'fame',
+        title: 'The Thought-Leadership Dispatch',
+        description: 'Polish a deep-dive technical article or open-source tool to share on X and LinkedIn, showing your peer network that you’re operating at the cutting edge.'
       }
     ]
   },
   {
     id: 4,
     chapter: 'IV',
-    category: 'Unconscious Envy',
-    title: 'The Bitter Mirror',
-    scenario: 'You observe a former classmate whose trajectory strikes an uncomfortable nerve of envy. Whose current reality sparks that private sting of jealousy?',
+    category: 'Under-the-Hood Dread',
+    title: 'The 3:15 AM Teething Vigil',
+    scenario: 'You are rocking a teething toddler back to sleep in the dark at 3:15 AM. As your exhausted brain drifts into the deepest, unvarnished fear keeping you up at night, what is it?',
     options: [
       {
+        idol: 'money',
+        title: 'Economic Vulnerability & Cash Drain',
+        description: 'Getting blindsided by a tech layoff while carrying a mortgage and daycare costs, watching your hard-earned liquid buffer evaporate to zero.'
+      },
+      {
         idol: 'pleasure',
-        title: 'The Carefree Sybarite',
-        description: 'The friend who never works past 3:00 PM, sleeps nine hours, frequents world-class restaurants, and glides through life in effortless, vibrant comfort.'
+        title: 'The Endless Grind of Depletion',
+        description: 'The terrifying feeling that your youth and vitality are permanently gone, replaced by an endless, joyless loop of chores, exhaustion, and bodily fatigue.'
       },
       {
         idol: 'power',
-        title: 'The Silent Kingmaker',
-        description: 'The behind-the-scenes operator whose quiet telephone calls alter policy, settle boardroom wars, and summon governors to their table.'
+        title: 'Total Subjugation of Your Time',
+        description: 'Realizing you have zero autonomy left: trapped between arbitrary corporate demands at work and unrelenting family needs at home with no say over your life.'
       },
       {
         idol: 'fame',
-        title: 'The Celebrated Icon',
-        description: 'The colleague who just won the premier industry prize, celebrated with standing ovations, glowing magazine features, and widespread adoration.'
-      },
-      {
-        idol: 'money',
-        title: 'The Untouchable Rentier',
-        description: 'The peer who sold their company for $150M and now holds pure liquid autonomy, insulated from the need to ever justify their time or expenses.'
+        title: 'Fading into Mediocre Obscurity',
+        description: 'Looking back in ten years and realizing you became a forgettable, middle-tier cog who never built anything notable or achieved professional mastery.'
       }
     ]
   },
   {
     id: 5,
     chapter: 'V',
-    category: 'The Non-Negotiable',
-    title: 'The Bitter Sacrifice',
-    scenario: 'A three-year test of adversity is demanded of you. Which condition would be absolute psychic torment that you could least tolerate enduring?',
+    category: 'Mental Load & Hustle Culture',
+    title: 'The Sunday Evening PR Drop',
+    scenario: 'It’s 9:00 PM Sunday. Toys cover the floor, the dishwasher is running, and you’re packing daycare lunches. A Slack notification from an ambitious, childless peer drops into the engineering channel with a massive weekend PR. What is your inner reflex?',
     options: [
       {
-        idol: 'money',
-        title: 'Living on the Knife-Edge',
-        description: 'Watching your liquid savings plummet to zero, surviving month-to-month in precarious uncertainty where one flat tire ruins your budget.'
-      },
-      {
         idol: 'power',
-        title: 'Total Disenfranchisement',
-        description: 'Being stripped of all autonomy, subjected to an incompetent boss whose every contradictory whim you must implement without protest.'
-      },
-      {
-        idol: 'fame',
-        title: 'Universal Invisibility',
-        description: 'Pouring your heart into exceptional work only for it to be completely ignored, credited to someone else, and being treated as a non-entity by peers.'
+        title: 'Resentment at Being Outmaneuvered',
+        description: 'Irritation that this colleague is driving changes without consulting you, forcing you into a reactive position on Monday morning.'
       },
       {
         idol: 'pleasure',
-        title: 'Squalor & Physical Grime',
-        description: 'Enduring freezing barracks, backbreaking labor, tasteless rations, constant physical blisters, and no moments of warmth or respite.'
+        title: 'Visceral Weariness & Depletion',
+        description: 'Bone-deep exhaustion: you just spent 48 hours changing diapers and mediating tantrums with zero rest, and now work is already demanding cognitive bandwidth.'
+      },
+      {
+        idol: 'money',
+        title: 'Bonus & Promotion Calibration Anxiety',
+        description: 'Calculation: you wonder if this colleague’s unencumbered weekend grind will edge you out on performance calibrations and equity grant refreshes.'
+      },
+      {
+        idol: 'fame',
+        title: 'The Stigma of the "Distracted Parent"',
+        description: 'Insecurity: you worry your manager will view them as the star "10x engineer" while you are quietly categorized as a coasting parent who clocks out at 5.'
       }
     ]
   },
   {
     id: 6,
     chapter: 'VI',
-    category: 'Leisure & Solitude',
-    title: 'The Sovereign Weekend',
-    scenario: 'You are granted 72 hours of uninterrupted freedom with all digital demands suspended. Which itinerary represents the peak expression of personal fulfillment?',
+    category: 'Social Comparison',
+    title: 'The Bitter Classmate Update',
+    scenario: 'You catch up with a former engineering classmate whose trajectory strikes an uncomfortable, private nerve of envy. Whose current life sparks that twinge of jealousy?',
     options: [
       {
         idol: 'pleasure',
-        title: 'The Sensory Indulgence',
-        description: 'Deep tissue therapy, world-class vintage wines, exquisite meals prepared by private chefs, and serene lounging in high-thread-count linen.'
+        title: 'The Unstressed Digital Nomad',
+        description: 'The peer who took a low-stakes remote role in a quiet mountain town, sleeps 8.5 hours a night, surfs at lunch, and never experiences domestic chaos.'
       },
       {
         idol: 'money',
-        title: 'The Capital Architect',
-        description: 'Deep-diving into emerging market mispricings, optimizing asymmetric investment structures, and fortifying your portfolio’s return yield.'
-      },
-      {
-        idol: 'fame',
-        title: 'The High-Profile Salon',
-        description: 'Attending an elite intellectual salon where you are the guest of honor, engaging in scintillating discourse and being praised by top minds.'
+        title: 'The Liquid Multi-Millionaire',
+        description: 'The colleague whose startup exited or who rode a massive stock run-up, sitting on millions liquid and never stressing over mortgage or tuition again.'
       },
       {
         idol: 'power',
-        title: 'The Strategic War Room',
-        description: 'Gathering your inner council over whiteboards to hammer out the operational blueprint for launching a dominant new initiative.'
+        title: 'The Influential Decision-Maker',
+        description: 'The VP who commands a 60-person organization, dictates the company’s strategic vision, and commands automatic deference in every boardroom.'
+      },
+      {
+        idol: 'fame',
+        title: 'The Celebrated Tech Icon',
+        description: 'The engineer who authored a viral framework, has 80k Twitter followers, keynotes premier conferences, and is widely heralded as an industry authority.'
       }
     ]
   },
   {
     id: 7,
     chapter: 'VII',
-    category: 'Crisis Reflex',
-    title: 'The Sudden Collapse',
-    scenario: 'A major enterprise you spent two grueling years building suffers a sudden, catastrophic failure. What is your immediate psychological reflex?',
+    category: 'Relationship Friction',
+    title: 'The Division of Labor Clashing',
+    scenario: 'You and your partner are running on fumes, balancing two demanding careers, daycare sicknesses, and household chores. What recurring friction triggers your deepest internal resentment?',
     options: [
       {
+        idol: 'pleasure',
+        title: 'Zero Protected Rest or Downtime',
+        description: 'Never getting a single unbroken block of quiet self-care, sleep, or physical recovery because every weekend is consumed by domestic errands.'
+      },
+      {
         idol: 'power',
-        title: 'Reassert Command',
-        description: 'Immediately step up to the podium, take the wheel from trembling lieutenants, and issue ironclad orders to control the restructuring.'
+        title: 'Chaos & Overridden Systems',
+        description: 'When household systems and schedules feel chaotic, or when your partner overrides your organized routines and leaves you feeling out of control.'
       },
       {
         idol: 'money',
-        title: 'Halt the Bleeding',
-        description: 'Immediately review balance sheets, consult counsel to ring-fence personal assets, and safeguard your liquidity against legal contagion.'
+        title: 'Creeping Expenses & Eroded Margins',
+        description: 'When unforeseen household expenses, impulse buys, or childcare costs feel like they are eating your savings rate and slowing your family runway.'
       },
       {
         idol: 'fame',
-        title: 'Defend the Reputational Brand',
-        description: 'Hire elite crisis communication advisors to sculpt the narrative, terrified that this stain will destroy your hard-won professional standing.'
-      },
-      {
-        idol: 'pleasure',
-        title: 'Escape the Toxic Fallout',
-        description: 'Flee the hostile environment to recover in a restorative wellness resort, soothing the visceral bodily stress with rest and comfort.'
+        title: 'Unrecognized Cognitive Contribution',
+        description: 'Feeling like your partner doesn’t appreciate how demanding your professional role is, taking your intellectual labor and career sacrifices for granted.'
       }
     ]
   },
   {
     id: 8,
     chapter: 'VIII',
-    category: 'Validation Fuel',
-    title: 'The Soul-Level Compliment',
-    scenario: 'Which unprompted tribute from someone whose discernment you hold in high esteem warms your core for weeks afterward?',
+    category: 'Resource Allocation',
+    title: 'The Unexpected Liquidity Event',
+    scenario: 'A company secondary tender offer or annual performance bonus nets you $60,000 cash after taxes. How do you instinctively want to allocate the bulk of it?',
     options: [
       {
-        idol: 'fame',
-        title: '"A Master of Our Era"',
-        description: '"Your work has redefined our field. Everyone is talking about your talent; your name is on everyone’s lips."'
-      },
-      {
-        idol: 'power',
-        title: '"The Gravitational Force"',
-        description: '"When you speak, the room aligns. Things only move because you have the sheer force of will to drive them through."'
-      },
-      {
         idol: 'money',
-        title: '"The Truly Sovereign"',
-        description: '"You’ve achieved real ' + "f***-you" + ' independence. Nobody can bully you, nobody owns you, and your family is set for generations."'
+        title: 'The Ironclad Emergency Runway',
+        description: 'Shovel every dollar into safe index funds and high-yield savings to extend your family’s financial buffer and hedge against tech sector volatility.'
       },
       {
         idol: 'pleasure',
-        title: '"The Art of Living"',
-        description: '"You are the only person I know who truly enjoys life. You radiate vitality, grace, ease, and effortless calm amid the chaos."'
+        title: 'The Sanity & Restoration Package',
+        description: 'Book a luxury family resort with top-tier childcare, hire a regular cleaning and meal service, and buy yourself prime physical rest and comfort.'
+      },
+      {
+        idol: 'power',
+        title: 'The Autonomous Side-Venture',
+        description: 'Fund a dedicated side-project or angel check where you have complete equity ownership and executive say over the product roadmap.'
+      },
+      {
+        idol: 'fame',
+        title: 'The Prestige & Brand Investment',
+        description: 'Fund an ambitious public creative venture, sponsor a marquee tech community, or build credentials that dramatically elevate your professional standing.'
       }
     ]
   },
   {
     id: 9,
     chapter: 'IX',
-    category: 'Interpersonal Friction',
-    title: 'The Unforgivable Slight',
-    scenario: 'In a close partnership or friendship, what specific behavior from the other person triggers your most visceral, incandescent anger?',
+    category: 'Validation & Performance',
+    title: 'The Calibration Accolade',
+    scenario: 'It’s annual performance calibration time. Your executive leadership pulls you aside for feedback. Which praise leaves you buzzing with pride for weeks?',
     options: [
       {
-        idol: 'power',
-        title: 'Bypassing Your Authority',
-        description: 'They execute a pivotal decision behind your back without your knowledge or consent, presenting you with a fait accompli.'
-      },
-      {
-        idol: 'fame',
-        title: 'Public Disparagement',
-        description: 'They contradict, mock, or air your flaws in front of a circle of influential peers, tarnishing your social standing.'
-      },
-      {
         idol: 'money',
-        title: 'Reckless Fiscal Exposure',
-        description: 'They gamble or mismanage shared financial commitments, threatening your hard-won liquidity buffer and credit safety.'
+        title: '"You’re in Our Top Pay Tier"',
+        description: '"We’ve granted you our highest equity refresh and bonus; you are in the top compensation percentile across the engineering division."'
+      },
+      {
+        idol: 'power',
+        title: '"You Run the Show"',
+        description: '"Whenever there’s an existential crisis, we hand the keys to you. You are the only person with the operational command to steer us through."'
       },
       {
         idol: 'pleasure',
-        title: 'Chaos & Chronic Drama',
-        description: 'They consistently inject hysterical arguments, emotional turmoil, and physical disarray into your tranquil home environment.'
+        title: '"You’ve Mastered the Art of Life"',
+        description: '"You have built an enviable rhythm. You ship great work without ever burning out, your calendar is sane, and you truly protect your family time."'
+      },
+      {
+        idol: 'fame',
+        title: '"A Master of the Craft"',
+        description: '"Your engineering reputation is unmatched. Staff engineers from across the company look to your technical standards as the gold standard."'
       }
     ]
   },
   {
     id: 10,
     chapter: 'X',
-    category: 'Existential Legacy',
-    title: 'The Hollow Epitaph',
-    scenario: 'At the twilight of your existence, looking back across the decades, which summary of your life would feel like a tragic, unforgivable squandering of your soul?',
+    category: 'Crisis Reflex',
+    title: 'The Layoff Wave Survivor',
+    scenario: 'Your company announces a 15% reduction in force. You survive the cut, but three close teammates were let go. What is your immediate psychological reflex?',
     options: [
       {
-        idol: 'fame',
-        title: 'The Forgotten Footnote',
-        description: '"They were a pleasant enough individual, but their name vanished with their casket, leaving no ripple on the wider world."'
+        idol: 'money',
+        title: 'Audit the Runway',
+        description: 'Immediately calculate your family’s monthly burn rate, check liquid reserves, and verify how many months you could survive if you were next.'
       },
       {
         idol: 'power',
-        title: 'The Passive Spectator',
-        description: '"They lived comfortably, but were always a cog in someone else’s machine, never holding the reins or authoring their own fate."'
-      },
-      {
-        idol: 'money',
-        title: 'The Indigent Dreamer',
-        description: '"They had grand ideas and warm applause, but died broke and dependent, leaving their loved ones destitute and insecure."'
+        title: 'Seize the Vacuum',
+        description: 'Step into the leadership void: consolidate critical projects under your ownership and make your role indispensable to the reorganized company.'
       },
       {
         idol: 'pleasure',
-        title: 'The Joyless Ascetic',
-        description: '"They amassed immense empire and acclaim, yet spent their entire mortal span in sleepless torment, never savoring a single day."'
+        title: 'Numb the Survivor Guilt',
+        description: 'The visceral physical stress leaves you depleted: you close your laptop early, order comfort takeout, and escape into mindless rest to soothe the anxiety.'
+      },
+      {
+        idol: 'fame',
+        title: 'Protect Your Brand & Optics',
+        description: 'Worry about industry perception: what does this restructuring say about your company, and how can you update your public profile to stay desirable?'
       }
     ]
   },
   {
     id: 11,
     chapter: 'XI',
-    category: 'Symbolic Triumph',
-    title: 'The Study Relic',
-    scenario: 'In your private sanctuary, you are permitted to display one physical artifact that represents your personal triumph. Which holds the deepest quiet resonance?',
+    category: 'Existential Triumph',
+    title: 'The 30-Something Milestone',
+    scenario: 'Looking toward the end of your 30s, which scenario would make you feel like you truly "won" this demanding chapter of life?',
     options: [
       {
         idol: 'money',
-        title: 'The Clean Ledger',
-        description: 'A discreet cryptographic token proving unencumbered, sovereign assets sufficient to fund your family’s dreams indefinitely.'
-      },
-      {
-        idol: 'power',
-        title: 'The Founder’s Seal',
-        description: 'An engraved charter granting you ultimate veto and executive governance authority over an enduring institution.'
-      },
-      {
-        idol: 'fame',
-        title: 'The Gilded Laurels',
-        description: 'A framed international medallion and front-page career retrospective commemorating your genius and cultural impact.'
+        title: 'Unshakable Financial Independence',
+        description: 'Your investment portfolio can fund your mortgage, family lifestyle, and kids’ college even if you never work another day in tech.'
       },
       {
         idol: 'pleasure',
-        title: 'The Panoramic Loggia',
-        description: 'A bespoke hand-crafted chair positioned beside custom panoramic glass overlooking the sea, calibrated for exquisite relaxation.'
+        title: 'A Rested, Unhurried Existence',
+        description: 'Waking up refreshed, cooking unhurried dinners with your kids every night, working 25 flexible hours, and feeling physically vibrant.'
+      },
+      {
+        idol: 'power',
+        title: 'Complete Architectural Sovereignty',
+        description: 'Being the undisputed technical decision-maker: designing the systems on your own terms with zero bureaucratic interference.'
+      },
+      {
+        idol: 'fame',
+        title: 'Celebrated Industry Eminence',
+        description: 'Being recognized across the tech industry as a definitive authority, with respected publications, keynote invites, and widespread peer esteem.'
       }
     ]
   },
   {
     id: 12,
     chapter: 'XII',
-    category: 'The Instinctive Reward',
-    title: 'The Triumph Protocol',
-    scenario: 'You just completed an exhausting, 100-day high-stakes trial of endurance. How do you instinctively reward yourself on night one?',
+    category: 'The Decompression Ritual',
+    title: 'Friday Night Silence',
+    scenario: 'You’ve just survived a brutal sprint where both kids had ear infections and you had to ship a critical production release. It’s 9:30 PM Friday, both kids are finally asleep. How do you decompress?',
     options: [
       {
         idol: 'pleasure',
-        title: 'The Hedonic Reconnection',
-        description: 'Switch off all phones, sink into a thermal bath, order a transcendent multi-course dinner with vintage wine, and sleep without an alarm for four days.'
+        title: 'Deep Sensory Escape & Sleep',
+        description: 'Pour a great drink, order premium takeout, put on noise-canceling headphones, and sleep until 9:00 AM without setting a single alarm.'
       },
       {
         idol: 'money',
-        title: 'The Ledger Verification',
-        description: 'Watch the wire transfer confirmation register in your private vault and immediately calculate the compounding gains toward ultimate freedom.'
-      },
-      {
-        idol: 'fame',
-        title: 'The Victor’s Dispatches',
-        description: 'Release the celebratory announcement across industry channels, reading every laudatory comment and watching the congratulations pour in.'
+        title: 'Checking the Financial Fruit',
+        description: 'Open your portfolio dashboard, verify the direct deposit cleared, and find comfort in the numbers that make this grueling pace worthwhile.'
       },
       {
         idol: 'power',
-        title: 'The Escalation Briefing',
-        description: 'Call your top directors into a private dinner to leverage your newly won victory into demanding expanded authority for the coming year.'
+        title: 'Autonomous Goal Calibration',
+        description: 'Open your personal workspace and quietly draft your own strategic goals and project blueprints for next quarter on your own terms.'
+      },
+      {
+        idol: 'fame',
+        title: 'Savoring the Release Acclaim',
+        description: 'Check the team Slack and company announcement thread to read the congratulatory messages and revel in the recognition of your hard work.'
       }
     ]
   }
 ];
 
 export function calculateResults(answers) {
-  // answers is an object or array mapping questionId to selected idol
   const tallies = {
     money: 0,
     power: 0,
@@ -509,7 +508,6 @@ export function calculateResults(answers) {
   });
 
   const total = Object.values(tallies).reduce((acc, v) => acc + v, 0) || 1;
-
   const sorted = Object.entries(tallies).sort((a, b) => b[1] - a[1]);
 
   const primaryId = sorted[0][0];
