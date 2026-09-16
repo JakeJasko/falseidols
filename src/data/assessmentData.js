@@ -262,35 +262,6 @@ export const SCENARIOS = [
   {
     id: 5,
     chapter: 'V',
-    category: 'Weekly Pressure',
-    title: 'The Sunday Evening Slump',
-    scenario: 'It’s 9:00 PM on Sunday night. The weekend is ending, chores are wrapping up, and the reality of Monday morning sets in. What thought generates the most dread?',
-    options: [
-      {
-        idol: 'power',
-        title: 'Facing a Schedule Dictated by Others',
-        description: 'Knowing your coming week will be dictated by other people’s agendas, meetings, and deadlines, leaving you little say over your own time.'
-      },
-      {
-        idol: 'pleasure',
-        title: 'Starting the Week Already Depleted',
-        description: 'Realizing you didn’t get enough real rest this weekend and face another five days of early alarms, daily routines, and mental fatigue.'
-      },
-      {
-        idol: 'money',
-        title: 'Questioning the Financial Return',
-        description: 'Wondering whether the hard work and stress you pour into your job are translating into real financial headway or just paying current bills.'
-      },
-      {
-        idol: 'fame',
-        title: 'The Pressure to Prove Yourself',
-        description: 'The anxiety of having to perform, stay visible, and continually prove your competence to your bosses, peers, and professional circle.'
-      }
-    ]
-  },
-  {
-    id: 6,
-    chapter: 'VI',
     category: 'Social Comparison',
     title: 'The Unexpected Envy',
     scenario: 'You run into an old friend or browse social media, and someone else’s life triggers an unexpected, quiet pang of jealousy. Whose reality strikes a chord?',
@@ -318,37 +289,8 @@ export const SCENARIOS = [
     ]
   },
   {
-    id: 7,
-    chapter: 'VII',
-    category: 'Home Life & Relationships',
-    title: 'The Domestic Friction',
-    scenario: 'When daily pressures build up at home between careers, chores, and family responsibilities, what recurring issue triggers your deepest internal irritation?',
-    options: [
-      {
-        idol: 'pleasure',
-        title: 'Lack of Personal Rest and Space',
-        description: 'Feeling like you never get an uninterrupted moment to rest, recharge, or simply enjoy some quiet time without someone needing something.'
-      },
-      {
-        idol: 'power',
-        title: 'Disorganized Plans and Lack of Control',
-        description: 'When household plans feel messy, uncoordinated, or constantly changing, making you feel like you have no control over the household flow.'
-      },
-      {
-        idol: 'money',
-        title: 'Budget Tension and Financial Strain',
-        description: 'When unexpected household expenses, impulse purchases, or tight budgets threaten your monthly savings goals and financial buffer.'
-      },
-      {
-        idol: 'fame',
-        title: 'Feeling Taken for Granted',
-        description: 'Feeling like your partner or family members don’t fully see or appreciate how hard you work and the daily sacrifices you make for everyone.'
-      }
-    ]
-  },
-  {
-    id: 8,
-    chapter: 'VIII',
+    id: 6,
+    chapter: 'VI',
     category: 'Resource Allocation',
     title: 'The Unexpected Windfall',
     scenario: 'You receive an unexpected $25,000 bonus or family gift after taxes. What is your most natural, instinctive impulse for how to use the bulk of it?',
@@ -372,6 +314,64 @@ export const SCENARIOS = [
         idol: 'fame',
         title: 'A Notable Upgrade or Personal Project',
         description: 'Invest in a meaningful home improvement, creative project, or lifestyle enhancement that reflects your success and makes a great impression.'
+      }
+    ]
+  },
+  {
+    id: 7,
+    chapter: 'VII',
+    category: 'Weekly Pressure',
+    title: 'The Sunday Evening Slump',
+    scenario: 'It’s 9:00 PM on Sunday night. The weekend is ending, chores are wrapping up, and the reality of Monday morning sets in. What thought generates the most dread?',
+    options: [
+      {
+        idol: 'power',
+        title: 'Facing a Schedule Dictated by Others',
+        description: 'Knowing your coming week will be dictated by other people’s agendas, meetings, and deadlines, leaving you little say over your own time.'
+      },
+      {
+        idol: 'pleasure',
+        title: 'Starting the Week Already Depleted',
+        description: 'Realizing you didn’t get enough real rest this weekend and face another five days of early alarms, daily routines, and mental fatigue.'
+      },
+      {
+        idol: 'money',
+        title: 'Questioning the Financial Return',
+        description: 'Wondering whether the hard work and stress you pour into your job are translating into real financial headway or just paying current bills.'
+      },
+      {
+        idol: 'fame',
+        title: 'The Pressure to Prove Yourself',
+        description: 'The anxiety of having to perform, stay visible, and continually prove your competence to your bosses, peers, and professional circle.'
+      }
+    ]
+  },
+  {
+    id: 8,
+    chapter: 'VIII',
+    category: 'Home Life & Relationships',
+    title: 'The Domestic Friction',
+    scenario: 'When daily pressures build up at home between careers, chores, and family responsibilities, what recurring issue triggers your deepest internal irritation?',
+    options: [
+      {
+        idol: 'pleasure',
+        title: 'Lack of Personal Rest and Space',
+        description: 'Feeling like you never get an uninterrupted moment to rest, recharge, or simply enjoy some quiet time without someone needing something.'
+      },
+      {
+        idol: 'power',
+        title: 'Disorganized Plans and Lack of Control',
+        description: 'When household plans feel messy, uncoordinated, or constantly changing, making you feel like you have no control over the household flow.'
+      },
+      {
+        idol: 'money',
+        title: 'Budget Tension and Financial Strain',
+        description: 'When unexpected household expenses, impulse purchases, or tight budgets threaten your monthly savings goals and financial buffer.'
+      },
+      {
+        idol: 'fame',
+        title: 'Feeling Taken for Granted',
+        description: 'Feeling like your partner or family members don’t fully see or appreciate how hard you work and the daily sacrifices you make for everyone.'
       }
     ]
   },
@@ -494,15 +494,7 @@ export const SCENARIOS = [
 ];
 
 export const FULL_SCENARIOS = SCENARIOS;
-
-export const QUICK_SCENARIOS = [
-  { ...SCENARIOS[0], chapter: 'I' },
-  { ...SCENARIOS[1], chapter: 'II' },
-  { ...SCENARIOS[2], chapter: 'III' },
-  { ...SCENARIOS[3], chapter: 'IV' },
-  { ...SCENARIOS[5], chapter: 'V' },
-  { ...SCENARIOS[7], chapter: 'VI' }
-];
+export const QUICK_SCENARIOS = SCENARIOS.slice(0, 6);
 
 export function calculateResults(answers, totalQuestions = null) {
   const tallies = {

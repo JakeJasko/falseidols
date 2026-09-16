@@ -13,6 +13,7 @@ export default function ResultsScreen({
   answers,
   scenarios,
   mode,
+  onContinueToFull,
   onStartFullAssessment,
   onRetake
 }) {
@@ -549,48 +550,78 @@ export default function ResultsScreen({
         gap: '0.75rem',
         marginBottom: '1.5rem'
       }}>
-        {/* Quick Mode Upgrade Invitation */}
-        {mode === 'quick' && onStartFullAssessment && (
+        {/* Quick Mode Continuation to Full */}
+        {mode === 'quick' && (onContinueToFull || onStartFullAssessment) && (
           <div style={{
             backgroundColor: 'var(--bg-surface)',
             border: '1.5px solid var(--color-terracotta)',
             borderRadius: 'var(--radius-md)',
-            padding: '1rem 1.15rem',
+            padding: '1.1rem 1.15rem',
             display: 'flex',
-            alignItems: 'center',
-            justifyContent: 'space-between',
+            flexDirection: 'column',
             gap: '0.75rem',
             boxShadow: 'var(--shadow-subtle)'
           }}>
-            <div>
-              <div style={{
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+              <span style={{
                 fontFamily: 'var(--font-roman)',
-                fontSize: '10px',
+                fontSize: '10.5px',
                 fontWeight: 700,
                 color: 'var(--color-terracotta)',
                 letterSpacing: '0.08em'
               }}>
-                QUICK DIAGNOSTIC COMPLETE
+                6 OF 12 DILEMMAS COMPLETED
+              </span>
+              <span style={{
+                fontSize: '11px',
+                fontWeight: 700,
+                backgroundColor: 'var(--color-terracotta-light)',
+                color: 'var(--color-terracotta)',
+                padding: '2px 8px',
+                borderRadius: 'var(--radius-pill)'
+              }}>
+                6 Remaining
+              </span>
+            </div>
+            <div>
+              <div style={{
+                fontFamily: 'var(--font-serif)',
+                fontSize: '16px',
+                fontWeight: 700,
+                color: 'var(--text-primary)',
+                marginBottom: '0.2rem'
+              }}>
+                Complete the Full 12-Dilemma Assessment
               </div>
-              <div style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '2px' }}>
-                Want to validate your result across all 12 life dilemmas?
-              </div>
+              <p style={{
+                fontSize: '13px',
+                color: 'var(--text-secondary)',
+                lineHeight: 1.45
+              }}>
+                Your first 6 answers are already accounted for! Answer just 6 additional scenarios to unlock your comprehensive 12-dilemma psychological profile.
+              </p>
             </div>
             <button
-              onClick={onStartFullAssessment}
+              onClick={onContinueToFull || onStartFullAssessment}
               className="touch-active"
               style={{
-                flexShrink: 0,
-                padding: '0.55rem 0.95rem',
+                width: '100%',
+                height: '46px',
                 borderRadius: 'var(--radius-pill)',
                 backgroundColor: 'var(--color-terracotta)',
                 color: 'var(--text-on-accent)',
-                fontSize: '12.5px',
+                fontSize: '14px',
                 fontWeight: 600,
-                cursor: 'pointer'
+                display: 'flex',
+                alignItems: 'center',
+                justifyContent: 'center',
+                gap: '0.4rem',
+                cursor: 'pointer',
+                boxShadow: 'var(--shadow-subtle)'
               }}
             >
-              Take Full 12 &rarr;
+              <span>Continue with Remaining 6 Questions</span>
+              <ArrowRight size={16} />
             </button>
           </div>
         )}

@@ -65,8 +65,14 @@ export default function App() {
     window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
-  const handleStartFullAssessment = () => {
-    handleStartAssessment('full');
+  const handleContinueToFullAssessment = () => {
+    setAssessmentMode('full');
+    setResults(null);
+    // Find first question in FULL_SCENARIOS that has not been answered yet
+    const firstUnansweredIndex = FULL_SCENARIOS.findIndex((s) => !answers[s.id]);
+    setCurrentIndex(firstUnansweredIndex !== -1 ? firstUnansweredIndex : 6);
+    setScreen('assessment');
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 
   const handleRetake = () => {
@@ -111,7 +117,7 @@ export default function App() {
             answers={answers}
             scenarios={activeScenarios}
             mode={assessmentMode}
-            onStartFullAssessment={handleStartFullAssessment}
+            onContinueToFull={handleContinueToFullAssessment}
             onRetake={handleRetake}
           />
         )}
