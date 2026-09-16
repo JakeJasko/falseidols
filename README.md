@@ -31,7 +31,11 @@ The assessment guides users through 12 nuanced hypothetical dilemmas to determin
 
 ## Features
 
-- **12 Multi-Faceted Dilemmas**: Realistic scenarios across career pivots, financial windfalls, social friction, late-night dread, and crisis reactions.
+- **Dual Assessment Lengths**:
+  - **Quick Version (6 Dilemmas, ~90 seconds)**: Fast-track diagnostic focusing on the core tensions.
+  - **Full Assessment (12 Dilemmas, ~3–4 minutes)**: Complete psychological profiling across career, relationships, weekly rhythms, and milestones.
+  - **Seamless Upgrade**: Quick results include a one-click invitation to take the full 12-question deep dive.
+- **12 Multi-Faceted Dilemmas**: Realistic scenarios across career pivots, unexpected pings, free Saturdays, late-night worries, and windfalls without narrow jargon.
 - **Full Spectrum Diagnostic Profile**:
   - Primary Core Idol & Archetype dossier.
   - Secondary "Shadow" Idol (your backup sanctuary when your primary drive is blocked).
