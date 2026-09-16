@@ -493,7 +493,18 @@ export const SCENARIOS = [
   }
 ];
 
-export function calculateResults(answers) {
+export const FULL_SCENARIOS = SCENARIOS;
+
+export const QUICK_SCENARIOS = [
+  { ...SCENARIOS[0], chapter: 'I' },
+  { ...SCENARIOS[1], chapter: 'II' },
+  { ...SCENARIOS[2], chapter: 'III' },
+  { ...SCENARIOS[3], chapter: 'IV' },
+  { ...SCENARIOS[5], chapter: 'V' },
+  { ...SCENARIOS[7], chapter: 'VI' }
+];
+
+export function calculateResults(answers, totalQuestions = null) {
   const tallies = {
     money: 0,
     power: 0,
@@ -507,7 +518,8 @@ export function calculateResults(answers) {
     }
   });
 
-  const total = Object.values(tallies).reduce((acc, v) => acc + v, 0) || 1;
+  const answeredCount = Object.values(tallies).reduce((acc, v) => acc + v, 0);
+  const total = totalQuestions || answeredCount || 1;
   const sorted = Object.entries(tallies).sort((a, b) => b[1] - a[1]);
 
   const primaryId = sorted[0][0];

@@ -4,7 +4,7 @@ import HeroScreen from './components/HeroScreen';
 import AssessmentScreen from './components/AssessmentScreen';
 import ResultsScreen from './components/ResultsScreen';
 import PillarsGuideModal from './components/PillarsGuideModal';
-import { SCENARIOS, calculateResults } from './data/assessmentData';
+import { FULL_SCENARIOS, QUICK_SCENARIOS, calculateResults } from './data/assessmentData';
 import './App.css';
 
 export default function App() {
@@ -13,10 +13,13 @@ export default function App() {
   });
 
   const [screen, setScreen] = useState('hero'); // 'hero' | 'assessment' | 'results'
+  const [assessmentMode, setAssessmentMode] = useState('quick'); // 'quick' | 'full'
   const [currentIndex, setCurrentIndex] = useState(0);
   const [answers, setAnswers] = useState({});
   const [results, setResults] = useState(null);
   const [isPillarsGuideOpen, setIsPillarsGuideOpen] = useState(false);
+
+  const activeScenarios = assessmentMode === 'quick' ? QUICK_SCENARIOS : FULL_SCENARIOS;
 
   useEffect(() => {
     document.documentElement.setAttribute('data-theme', theme);
@@ -27,7 +30,8 @@ export default function App() {
     setTheme((prev) => (prev === 'light' ? 'dark' : 'light'));
   };
 
-  const handleStartAssessment = () => {
+  const handleStartAssessment = (mode = 'quick') => {
+    setAssessmentMode(mode);
     setAnswers({});
     setCurrentIndex(0);
     setResults(null);
@@ -43,7 +47,7 @@ export default function App() {
   };
 
   const handleNext = () => {
-    if (currentIndex < SCENARIOS.length - 1) {
+    if (currentIndex < activeScenarios.length - 1) {
       setCurrentIndex((prev) => prev + 1);
     }
   };
@@ -55,10 +59,14 @@ export default function App() {
   };
 
   const handleFinish = () => {
-    const computedResults = calculateResults(answers);
+    const computedResults = calculateResults(answers, activeScenarios.length);
     setResults(computedResults);
     setScreen('results');
     window.scrollTo({ top: 0, behavior: 'smooth' });
+  };
+
+  const handleStartFullAssessment = () => {
+    handleStartAssessment('full');
   };
 
   const handleRetake = () => {
@@ -87,6 +95,7 @@ export default function App() {
 
         {screen === 'assessment' && (
           <AssessmentScreen
+            scenarios={activeScenarios}
             currentIndex={currentIndex}
             answers={answers}
             onSelectOption={handleSelectOption}
@@ -100,6 +109,9 @@ export default function App() {
           <ResultsScreen
             results={results}
             answers={answers}
+            scenarios={activeScenarios}
+            mode={assessmentMode}
+            onStartFullAssessment={handleStartFullAssessment}
             onRetake={handleRetake}
           />
         )}

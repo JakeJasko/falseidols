@@ -3,7 +3,7 @@ import { createPortal } from 'react-dom';
 import { X } from 'lucide-react';
 import { SCENARIOS, IDOLS } from '../data/assessmentData';
 
-export default function AnswerReviewModal({ isOpen, onClose, answers }) {
+export default function AnswerReviewModal({ isOpen, onClose, answers, scenarios = SCENARIOS }) {
   if (!isOpen || typeof document === 'undefined') return null;
 
   return createPortal(
@@ -58,7 +58,7 @@ export default function AnswerReviewModal({ isOpen, onClose, answers }) {
               fontWeight: 700,
               color: 'var(--text-primary)'
             }}>
-              Your 12 Instinctive Choices
+              Your {scenarios.length} Instinctive Choices
             </div>
           </div>
           <button
@@ -84,7 +84,7 @@ export default function AnswerReviewModal({ isOpen, onClose, answers }) {
           flexDirection: 'column',
           gap: '1rem'
         }}>
-          {SCENARIOS.map((scenario) => {
+          {scenarios.map((scenario) => {
             const selectedIdolKey = answers[scenario.id];
             const selectedOption = scenario.options.find((o) => o.idol === selectedIdolKey);
             const idolInfo = IDOLS[selectedIdolKey];

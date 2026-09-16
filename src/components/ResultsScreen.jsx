@@ -8,7 +8,14 @@ import ShareModal from './ShareModal';
 import AnswerReviewModal from './AnswerReviewModal';
 import PillarsGuideModal from './PillarsGuideModal';
 
-export default function ResultsScreen({ results, answers, onRetake }) {
+export default function ResultsScreen({
+  results,
+  answers,
+  scenarios,
+  mode,
+  onStartFullAssessment,
+  onRetake
+}) {
   const [isShareModalOpen, setIsShareModalOpen] = useState(false);
   const [isReviewModalOpen, setIsReviewModalOpen] = useState(false);
   const [isPillarsModalOpen, setIsPillarsModalOpen] = useState(false);
@@ -269,7 +276,7 @@ export default function ResultsScreen({ results, answers, onRetake }) {
             fontWeight: 700,
             color: 'var(--text-muted)'
           }}>
-            12 INSTINCTS
+            {results.total} INSTINCTS
           </span>
         </div>
 
@@ -313,7 +320,7 @@ export default function ResultsScreen({ results, answers, onRetake }) {
                     fontVariantNumeric: 'tabular-nums',
                     color: isPrimary ? idol.accentColor : 'var(--text-secondary)'
                   }}>
-                    {percentage}% ({count}/12)
+                    {percentage}% ({count}/{results.total})
                   </span>
                 </div>
 
@@ -542,6 +549,52 @@ export default function ResultsScreen({ results, answers, onRetake }) {
         gap: '0.75rem',
         marginBottom: '1.5rem'
       }}>
+        {/* Quick Mode Upgrade Invitation */}
+        {mode === 'quick' && onStartFullAssessment && (
+          <div style={{
+            backgroundColor: 'var(--bg-surface)',
+            border: '1.5px solid var(--color-terracotta)',
+            borderRadius: 'var(--radius-md)',
+            padding: '1rem 1.15rem',
+            display: 'flex',
+            alignItems: 'center',
+            justifyContent: 'space-between',
+            gap: '0.75rem',
+            boxShadow: 'var(--shadow-subtle)'
+          }}>
+            <div>
+              <div style={{
+                fontFamily: 'var(--font-roman)',
+                fontSize: '10px',
+                fontWeight: 700,
+                color: 'var(--color-terracotta)',
+                letterSpacing: '0.08em'
+              }}>
+                QUICK DIAGNOSTIC COMPLETE
+              </div>
+              <div style={{ fontSize: '13px', color: 'var(--text-secondary)', marginTop: '2px' }}>
+                Want to validate your result across all 12 life dilemmas?
+              </div>
+            </div>
+            <button
+              onClick={onStartFullAssessment}
+              className="touch-active"
+              style={{
+                flexShrink: 0,
+                padding: '0.55rem 0.95rem',
+                borderRadius: 'var(--radius-pill)',
+                backgroundColor: 'var(--color-terracotta)',
+                color: 'var(--text-on-accent)',
+                fontSize: '12.5px',
+                fontWeight: 600,
+                cursor: 'pointer'
+              }}
+            >
+              Take Full 12 &rarr;
+            </button>
+          </div>
+        )}
+
         {/* Share Button (Primary) */}
         <button
           onClick={() => setIsShareModalOpen(true)}
@@ -585,7 +638,7 @@ export default function ResultsScreen({ results, answers, onRetake }) {
           }}
         >
           <CheckCircle2 size={16} color="var(--color-terracotta)" />
-          <span>Review All 12 Dilemma Answers</span>
+          <span>Review All {results.total} Dilemma Answers</span>
         </button>
 
         {/* Four Pillars Guide Button */}
@@ -645,6 +698,7 @@ export default function ResultsScreen({ results, answers, onRetake }) {
         isOpen={isReviewModalOpen}
         onClose={() => setIsReviewModalOpen(false)}
         answers={answers}
+        scenarios={scenarios}
       />
 
       <PillarsGuideModal

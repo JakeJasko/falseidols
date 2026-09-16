@@ -1,8 +1,9 @@
-import React from 'react';
-import { ArrowRight, Compass, ShieldCheck, Clock, Award, Coins, Crown, Sparkles } from 'lucide-react';
+import React, { useState } from 'react';
+import { ArrowRight, Compass, ShieldCheck, Clock, Award, Coins, Crown, Sparkles, Zap } from 'lucide-react';
 import { IDOLS } from '../data/assessmentData';
 
 export default function HeroScreen({ onStartAssessment, onOpenPillarsGuide }) {
+  const [mode, setMode] = useState('quick');
   const idolList = Object.values(IDOLS);
 
   return (
@@ -155,35 +156,134 @@ export default function HeroScreen({ onStartAssessment, onOpenPillarsGuide }) {
         })}
       </div>
 
-      {/* Assessment Badges / Meta Info */}
-      <div style={{
-        backgroundColor: 'var(--bg-surface)',
-        border: '1px solid var(--border-subtle)',
-        borderRadius: 'var(--radius-lg)',
-        padding: '1rem',
-        display: 'flex',
-        justifyContent: 'space-around',
-        marginBottom: '2rem',
-        boxShadow: 'var(--shadow-subtle)'
-      }}>
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-          <Clock size={16} color="var(--color-terracotta)" />
-          <span style={{ fontSize: '12px', fontWeight: 600, color: 'var(--text-secondary)' }}>
-            12 Dilemmas (~3 min)
+      {/* Assessment Mode Selector */}
+      <div style={{ marginBottom: '1.25rem' }}>
+        <div style={{
+          display: 'flex',
+          alignItems: 'center',
+          justifyContent: 'space-between',
+          marginBottom: '0.5rem'
+        }}>
+          <span style={{
+            fontFamily: 'var(--font-roman)',
+            fontSize: '11px',
+            fontWeight: 700,
+            letterSpacing: '0.1em',
+            color: 'var(--text-muted)'
+          }}>
+            SELECT ASSESSMENT LENGTH
+          </span>
+          <span style={{
+            fontSize: '11px',
+            fontWeight: 600,
+            color: 'var(--color-terracotta)'
+          }}>
+            {mode === 'quick' ? '6 Questions' : '12 Questions'}
           </span>
         </div>
-        <div style={{ width: '1px', backgroundColor: 'var(--border-subtle)' }} />
-        <div style={{ display: 'flex', alignItems: 'center', gap: '0.4rem' }}>
-          <ShieldCheck size={16} color="var(--color-terracotta)" />
-          <span style={{ fontSize: '12px', fontWeight: 600, color: 'var(--text-secondary)' }}>
-            Psychological Nuance
-          </span>
+
+        <div style={{
+          display: 'grid',
+          gridTemplateColumns: '1fr 1fr',
+          gap: '0.65rem'
+        }}>
+          {/* Quick Version Card */}
+          <button
+            type="button"
+            onClick={() => setMode('quick')}
+            className="touch-active"
+            style={{
+              padding: '0.85rem 0.75rem',
+              borderRadius: 'var(--radius-md)',
+              border: mode === 'quick' ? '2px solid var(--color-terracotta)' : '1px solid var(--border-subtle)',
+              backgroundColor: mode === 'quick' ? 'var(--color-terracotta-light)' : 'var(--bg-surface)',
+              textAlign: 'left',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '0.25rem',
+              boxShadow: mode === 'quick' ? 'var(--shadow-card)' : 'var(--shadow-subtle)',
+              cursor: 'pointer',
+              position: 'relative'
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+              <span style={{
+                fontFamily: 'var(--font-roman)',
+                fontSize: '10px',
+                fontWeight: 700,
+                color: 'var(--color-terracotta)',
+                letterSpacing: '0.08em'
+              }}>
+                FAST TRACK
+              </span>
+              <Zap size={14} color="var(--color-terracotta)" />
+            </div>
+
+            <div style={{
+              fontFamily: 'var(--font-serif)',
+              fontSize: '15px',
+              fontWeight: 700,
+              color: 'var(--text-primary)'
+            }}>
+              Quick Version
+            </div>
+
+            <div style={{ fontSize: '11.5px', color: 'var(--text-secondary)', lineHeight: 1.3 }}>
+              6 dilemmas • ~90 seconds
+            </div>
+          </button>
+
+          {/* Full Version Card */}
+          <button
+            type="button"
+            onClick={() => setMode('full')}
+            className="touch-active"
+            style={{
+              padding: '0.85rem 0.75rem',
+              borderRadius: 'var(--radius-md)',
+              border: mode === 'full' ? '2px solid var(--color-terracotta)' : '1px solid var(--border-subtle)',
+              backgroundColor: mode === 'full' ? 'var(--color-terracotta-light)' : 'var(--bg-surface)',
+              textAlign: 'left',
+              display: 'flex',
+              flexDirection: 'column',
+              gap: '0.25rem',
+              boxShadow: mode === 'full' ? 'var(--shadow-card)' : 'var(--shadow-subtle)',
+              cursor: 'pointer',
+              position: 'relative'
+            }}
+          >
+            <div style={{ display: 'flex', alignItems: 'center', justifyContent: 'space-between' }}>
+              <span style={{
+                fontFamily: 'var(--font-roman)',
+                fontSize: '10px',
+                fontWeight: 700,
+                color: 'var(--color-terracotta)',
+                letterSpacing: '0.08em'
+              }}>
+                IN-DEPTH
+              </span>
+              <Clock size={14} color="var(--color-terracotta)" />
+            </div>
+
+            <div style={{
+              fontFamily: 'var(--font-serif)',
+              fontSize: '15px',
+              fontWeight: 700,
+              color: 'var(--text-primary)'
+            }}>
+              Full Assessment
+            </div>
+
+            <div style={{ fontSize: '11.5px', color: 'var(--text-secondary)', lineHeight: 1.3 }}>
+              12 dilemmas • ~3–4 mins
+            </div>
+          </button>
         </div>
       </div>
 
       {/* Primary Action Button (Mobile Thumb Friendly) */}
       <button
-        onClick={onStartAssessment}
+        onClick={() => onStartAssessment(mode)}
         className="touch-active"
         style={{
           width: '100%',
@@ -202,7 +302,7 @@ export default function HeroScreen({ onStartAssessment, onOpenPillarsGuide }) {
           marginBottom: '1rem'
         }}
       >
-        <span>Begin the Assessment</span>
+        <span>{mode === 'quick' ? 'Begin Quick Assessment (6 Dilemmas)' : 'Begin Full Assessment (12 Dilemmas)'}</span>
         <ArrowRight size={18} />
       </button>
 

@@ -3,6 +3,7 @@ import { ArrowLeft, ArrowRight, Check } from 'lucide-react';
 import { SCENARIOS } from '../data/assessmentData';
 
 export default function AssessmentScreen({
+  scenarios = SCENARIOS,
   currentIndex,
   answers,
   onSelectOption,
@@ -10,8 +11,8 @@ export default function AssessmentScreen({
   onPrevious,
   onFinish
 }) {
-  const currentScenario = SCENARIOS[currentIndex];
-  const totalScenarios = SCENARIOS.length;
+  const currentScenario = scenarios[currentIndex] || scenarios[0];
+  const totalScenarios = scenarios.length;
   const currentAnswer = answers[currentScenario.id];
   const [slideDirection, setSlideDirection] = useState('next');
   const cardRef = useRef(null);
@@ -67,7 +68,7 @@ export default function AssessmentScreen({
               letterSpacing: '0.12em',
               color: 'var(--color-terracotta)'
             }}>
-              DILEMMA {currentScenario.chapter} OF XII
+              DILEMMA {currentScenario.chapter} OF {totalScenarios === 6 ? 'VI' : 'XII'}
             </span>
             <span style={{ color: 'var(--border-strong)' }}>•</span>
             <span style={{
